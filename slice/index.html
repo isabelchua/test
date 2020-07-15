@@ -10,9 +10,9 @@
 <body>
 
 <script>
-var tweet = prompt("");
-var tweetCount = tweet.length;
-alert ("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters remaining.");
+var tweet = prompt("Your tweet:");
+var tweetUnder50 = tweet.slice(0,50);
+alert (tweetUnder50);
 
 
 </script>

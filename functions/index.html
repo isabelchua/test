@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link href="https://fonts.googleapis.com/css?family=Chelsea Market" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1"> 
+  <title>functions</title>
+</head>
+<body>
+
+<script>
+
+function getMilk(money) {
+  console.log("buy "+ calcBottles(money, 1.5) + " bottles of milk");
+  return calcChange(money, 1.5);
+}
+
+function calcBottles(startingMoney, costPerBottle) {
+  var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+  return numberOfBottles;
+}
+
+function calcChange(startingAmount, costPerBottle) {
+  var change = startingAmount % costPerBottle;
+  return change;
+}
+
+console.log("Hello master, here is your " + getMilk(5) + " change.");
+
+</script>
+</body>
+</html>
