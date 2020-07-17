@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=.6, maximum-scale=.55, minimum-scale=.1"> 
+  <title>fibonacci</title>
+</head>
+<body>
+
+<script>
+
+
+function fibonacci (total) {
+        var arr = [0,1];
+
+        for(let ctr=1; ctr<total ; ctr++) {
+
+                arr[ctr+1] = arr[ctr] + arr[ctr-1];
+                console.log(arr[ctr-1]); 
+
+
+        }
+}
+
+fibonacci(20);
+</script>
+</body>
+</html>
