@@ -13,17 +13,15 @@
 
 function fibonacci (total) {
         var arr = [0,1];
-
         for(let ctr=1; ctr<total ; ctr++) {
-
                 arr[ctr+1] = arr[ctr] + arr[ctr-1];
-                console.log(arr[ctr-1]); 
-
-
+            //  console.log(arr[ctr-1]); 
         }
+        return arr;
 }
 
-fibonacci(20);
+//fibonacci(20);
+console.log(fibonacci(20)); 
 </script>
 </body>
 </html>

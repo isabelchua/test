@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Objects</title>
+
+
+</head>
+
+<body>
+
+<script>
+function HouseKeeper (yearsOfExperience, name, cleaningRepertoire) {
+        this.yearsOfExperience = yearsOfExperience;
+        this.name = name;
+        this.cleaningRepertoire = cleaningRepertoire;
+}
+
+var houseKeeper1 = new HouseKeeper(9, "Tom", ["lobby", "bedroom"]);
+console.log(houseKeeper1.name);
+
+var houseKeeper2 = new HouseKeeper(14, "Janet", ["lobby", "bedroom"]);
+console.log(houseKeeper2.cleaningRepertoire);
+
+</script>
+
+</body>
+
+</html>
