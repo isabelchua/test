@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Discounts</title>
+
+
+</head>
+
+<body>
+
+<script>
+function getDiscounts(value, discount) {
+
+        var discount = parseFloat(discount) / 100.0;
+
+        for(let i = 0; i < value.length; i++){
+                value[i] = value[i] * discount;
+        }
+
+        return value;
+
+}
+
+//     The discount is the percentage of the original price (i.e the discount of "75%" to 12 would be 9 as opposed to taking off 75% (making 3)).
+//     There won't be any awkward decimal numbers, only 0.5 to deal with.
+console.log(getDiscounts([2,4,5], "50%"));
+</script>
+
+</body>
+
+</html>
