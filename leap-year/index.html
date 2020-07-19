@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Objects</title>
+
+
+</head>
+
+<body>
+
+<script>
+function isLeap(year) {
+        if (year % 4 === 0) {
+                return true;
+        }
+        else if (year % 100 === 0) {
+                return false;
+        } else if (year % 400 === 0) {
+                return true;
+        }
+        else  {
+                return false;
+        }
+}
+
+
+for (var year = 1; year < 2020 ; year++) {
+        if (isLeap(year)) {
+                console.log(year + " leap year");
+        } else {
+                console.log(year + " not");
+        }
+}
+</script>
+
+</body>
+
+</html>
