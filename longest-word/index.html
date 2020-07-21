@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Longest Word</title>
+</head>
+
+<body>
+
+<script>
+// Write a function that finds the longest word in a sentence and returns it. If two or more words are the biggest, return the word closest to the start of the sentence. Characters such as apostophe, commas, periods, etc count as letters (e.g. O'Connor is 8 characters long).
+function longestWord(sentence) {
+        const words = sentence.split(' ');
+        let max = words[0];
+        for (let i =1; i < words.length ; i++){ 
+                if (words[i].length > max.length) {
+                        max = words[i];
+                        console.log(max);
+                }
+        }
+        return max;
+}
+console.log(longestWord("Hello darkness my old friend"));
+console.log(longestWord("Kayla's toy is plastic"));
+console.log(longestWord("Football is so cool!!!!!"));
+</script>
+
+</body>
+
+</html>
