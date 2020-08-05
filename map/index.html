@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div id="print"></div>
+</body>
+
+<script>
+     const numbers = [ 1, -2, 3, 4, 6];
+     
+     const filtered = numbers.filter(n => n >= 0);
+     const items = filtered.map( n=> ' <li>' + n + '</li>');
+
+     const html = '<ul>' + items.join('') + '<ul>';
+
+     console.log(html);
+     document.getElementById('print').innerHTML = html;
+
+</script>
+</html>
